@@ -18,7 +18,7 @@ class Data_snapnum():
       To load the class is requested:
         simulation : The EAGLE´s simulation
         snapnum    : The number related to the snapshot of this simulation. 
-        Path	     : Path where the .hdf5 file with the snapshot information.
+        Path	   : Path where the .hdf5 file with the snapshot information.
         user_name, password: The username and password of an EAGLE account.
     """
 
@@ -37,6 +37,7 @@ class Data_snapnum():
       # Hubble constan: 0.667
       # DarkMatter mass (M_*)
       """
+
       self.a     = f['Header'].attrs.get('Time')          
       self.h     = f['Header'].attrs.get('HubbleParam')               
       self.m_DM  = f['Header'].attrs.get('MassTable')[1]*self.h**[-1] 
@@ -47,6 +48,7 @@ class Data_snapnum():
       # matter density   (g/cm^3)
       # average matter density at this snapshot.
       """
+
       self.rho_c      = 30000/((3.086e+19)**2*6.6743e-8*8*np.pi)*(self.h)**2    
       Omega_matter    = f['Header'].attrs.get('Omega0')                         
       self.rho_matter = self.rho_c*Omega_matter*self.a**(-3)                    
@@ -151,6 +153,7 @@ class Data_snapnum():
       # There are failures when the specified itype is not present the attribute,
        so a it is used a try-except estructure
       """
+
       try:                                                                      
         count = 0
         # Loop over each file and extract the data.
@@ -169,6 +172,7 @@ class Data_snapnum():
 
         I choose the last one.
         """
+	
         aexp = f['PartType%i/%s'%(itype, att)].attrs.get('aexp-scale-exponent')
         hexp = f['PartType%i/%s'%(itype, att)].attrs.get('h-scale-exponent')
 
@@ -178,7 +182,7 @@ class Data_snapnum():
         
         # convert comovil to physical units and eliminate h multiplications
         if att != 'ParticleIDs' and data.dtype != np.int32 and data.dtype != np.int64:                 
-          data = np.multiply(data, self.a**aexp * self.h**hexp, dtype='f8')
+          data  = np.multiply(data, self.a**aexp * self.h**hexp, dtype='f8')
 
         del(aexp, hexp, tmp)                                                    
         gc.collect()
