@@ -1,6 +1,8 @@
+# README
+
 This is a repository of my final thesis in physics. There are 4 elements
 
-TFG_code.py: 
+## TFG_code.py: 
 
   This is the main code. It is a library that currently has: 1 class and 3 functions.
 
@@ -19,14 +21,14 @@ TFG_code.py:
 
 
 
-EAGLERawData_Study.ipynb: 
+## EAGLERawData_Study.ipynb: 
 
   This is the notebook before the creation of TFG_code.py. This is a notebook focused on the study of raw data. With this notebook you can study how are the outputs  
   of the dataset provided by EAGLE. In addition, it allows us to see what is not in the EAGLE dataset and to set as a goal to obtain it.
   
   
 
-TFG_code_example: 
+## TFG_code_example: 
 
   This second notebook is an example of how you would work with the TFG_code.py library.  This shows that a very elaborate study can be carried out in just a few 
   lines. Moreover, as it is modular, new tools could be created based on those already developed.
@@ -35,7 +37,7 @@ TFG_code_example:
 
 
 
-TFG_alu0101067766.pdf:
+## TFG_alu0101067766.pdf:
 
   Finally, the working memory has also been uploaded. In this memory, the meaning of what is asked for in the code, how it can be obtained and what the results   
   obtained imply. 
