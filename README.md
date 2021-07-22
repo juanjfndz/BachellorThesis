@@ -7,7 +7,7 @@ This is a repository of my final thesis in physics. There are 4 elements
   This is the main code. It is a library that currently has: 1 class and 3 functions.
 
   These tools are the main part of my final degree work.  The aim of these is to extract and manipulate information from a dataset. The dataset information is 
-  provided by the EAGLE project. This is a state-of-the-art project on simulations of galaxy evolution and formation.
+  provided by the [EAGLE project](http://icc.dur.ac.uk/Eagle/). This is a state-of-the-art project on simulations of galaxy evolution and formation.
 
   The code can be classified into two parts: 
 
