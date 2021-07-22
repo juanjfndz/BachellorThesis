@@ -2,24 +2,40 @@ This is a repository of my final thesis in physics. There are 4 elements
 
 TFG_code.py: 
 
-  It is a work in which a modular code is developed in Python that allows to extract information from the simulations of the EAGLE project. 
+  This is the main code. It is a library that currently has: 1 class and 3 functions.
 
-In addition, two Jupyter (Colab) Notebooks are shown as examples that allow the work carried out in this study to be visualised.
+  These tools are the main part of my final degree work.  The aim of these is to extract and manipulate information from a dataset. The dataset information is 
+  provided by the EAGLE project. This is a state-of-the-art project on simulations of galaxy evolution and formation.
+
+  The code can be classified into two parts: 
+
+    The "Data_snapnum" class and the "Galaxy_to_past" function: These are the main tools of this code. The class allows to connect to the EAGLE dataset and extract
+    information. The possible outputs of "Data_snapnum" are focused on the possible needs of the rest of the functions. "Galaxy_to_past" function allows to connect
+    information at different times of the simulation. Knowing the position of certain particles at a certain time.
+
+    The "Overrho" and "AngularMoment" functions: These are two examples of what can be done with this code. With the previous tools developed, it only remains to 
+    see what you want to investigate. This is the advantage of this code, it is modular. Being modular allows you to create new functions without having to modify 
+    the code, just add more functions.
 
 
-TFG_Data_Study: 
 
-  This Notebook is a study of the data provided by the simulation databases of the EAGLE project. This gives an idea of what was and what was not to          be developed for the code.
+TFG_Data_Study.ipynb: 
 
-
+  This is the notebook before the creation of TFG_code.py. This is a notebook focused on the study of raw data. With this notebook you can study how are the outputs  
+  of the dataset provided by EAGLE. In addition, it allows us to see what is not in the EAGLE dataset and to set as a goal to obtain it.
+  
+  
 
 TFG_Notebooks_example: 
 
-  The second Notebook is a complete example of how to use the developed code. It allows to obtain raw data from the EAGLE simulations, work until the necessary information is obtained, save it in a dataset of its own and finally visualise the data obtained. 
+  This second notebook is an example of how you would work with the TFG_code.py library.  This shows that a very elaborate study can be carried out in just a few 
+  lines. Moreover, as it is modular, new tools could be created based on those already developed.
+
+  In addition to using the library, the results obtained in the final degree project are also shown.
 
 
-To talk in a little more detail about the code: 
 
-This is a code that presents a class and 3 functions. The class "Data_snapnum" and the function "Galaxy_to_past" are the main tools to extract information from the simulations. The other two functions are examples of what can be done once the information has been extracted.
+TFG_alu0101067766.pdf:
 
-The idea of this code is to be modular. If instead of using the last two functions, you want to develop other functions for other purposes, you don't have to change the whole code. Just create the new functions and rely on the class "Data_snapnum" and "Galaxy_to_past".
+  Finally, the working memory has also been uploaded. In this memory, the meaning of what is asked for in the code, how it can be obtained and what the results   
+  obtained imply. 
