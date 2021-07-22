@@ -19,14 +19,14 @@ TFG_code.py:
 
 
 
-TFG_Data_Study.ipynb: 
+EAGLERawData_Study.ipynb: 
 
   This is the notebook before the creation of TFG_code.py. This is a notebook focused on the study of raw data. With this notebook you can study how are the outputs  
   of the dataset provided by EAGLE. In addition, it allows us to see what is not in the EAGLE dataset and to set as a goal to obtain it.
   
   
 
-TFG_Notebooks_example: 
+TFG_code_example: 
 
   This second notebook is an example of how you would work with the TFG_code.py library.  This shows that a very elaborate study can be carried out in just a few 
   lines. Moreover, as it is modular, new tools could be created based on those already developed.
