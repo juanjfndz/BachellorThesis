@@ -1,12 +1,21 @@
-This is a repository of my final thesis in physics. 
+This is a repository of my final thesis in physics. There are 4 elements
 
-It is a work in which a modular code is developed in Python that allows to extract information from the simulations of the EAGLE project. This code is stored in TFG_code.py.
+TFG_code.py: 
 
-In addition, two Jupyter (Colab) Notebooks are shown as examples that allow the work carried out in this study to be visualised:
+  It is a work in which a modular code is developed in Python that allows to extract information from the simulations of the EAGLE project. 
 
-  TFG_Data_Study: This Notebook is a study of the data provided by the simulation databases of the EAGLE project. This gives an idea of what was and what was not to          be developed for the code.
+In addition, two Jupyter (Colab) Notebooks are shown as examples that allow the work carried out in this study to be visualised.
 
-  TFG_Notebooks_example: The second Notebook is a complete example of how to use the developed code. It allows to obtain raw data from the EAGLE simulations, work until the necessary information is obtained, save it in a dataset of its own and finally visualise the data obtained. 
+
+TFG_Data_Study: 
+
+  This Notebook is a study of the data provided by the simulation databases of the EAGLE project. This gives an idea of what was and what was not to          be developed for the code.
+
+
+
+TFG_Notebooks_example: 
+
+  The second Notebook is a complete example of how to use the developed code. It allows to obtain raw data from the EAGLE simulations, work until the necessary information is obtained, save it in a dataset of its own and finally visualise the data obtained. 
 
 
 To talk in a little more detail about the code: 
